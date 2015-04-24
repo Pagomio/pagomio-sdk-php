@@ -1,14 +1,14 @@
 {
-  "name": "pagomio/pagomio-php-test",
+  "name": "pagomio/pagomio-sdk-php",
   "type": "library",
   "description": "Pagomio SDK for PHP",
   "keywords": ["pagomio", "sdk","php","pagosonline"],
-  "homepage": "https://github.com/Pagomio/pagomio-sdk-test",
+  "homepage": "https://github.com/Pagomio/pagomio-sdk-php",
   "license": "MIT",
   "authors": [
     {
       "name": "Pagomio Developers",
-      "homepage": "https://github.com/Pagomio/pagomio-sdk-test/contributors"
+      "homepage": "https://github.com/Pagomio/pagomio-sdk-php/contributors"
     }
   ],
   "require": {
