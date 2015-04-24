@@ -2,7 +2,7 @@
 
 require 'vendor/autoload.php';
 
-$pagomio = new Pagomio\Pagomio('123456','123456',true);
+$pagomio = new Pagomio\Pagomio('client_id','secret_id',true);
 
 $userData = new Pagomio\UserData();
 $userData->names = 'Name User';
