@@ -5,8 +5,8 @@ namespace Pagomio;
 
 class Client {
 
-    const BASE_URL_SANDBOX = "http://dev.sandbox.pagomio.com/app_dev.php/api/v1/payment";
-    const BASE_URL_PROD = "http://dev.pagomio.com/app_dev.php/api/v1/payment";
+    const BASE_URL_SANDBOX = "https://sandbox.pagomio.com/api/v1/payment";
+    const BASE_URL_PROD = "https://www.pagomio.com/api/v1/payment";
 
     protected $base_url;
 
