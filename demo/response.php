@@ -2,5 +2,5 @@
 
 require 'vendor/autoload.php';
 
-$pagomio = new Pagomio\Pagomio('123456','123456',true);
+$pagomio = new Pagomio\Pagomio('client_id','secret_id',true);
 var_dump($pagomio->getRequestPayment());
