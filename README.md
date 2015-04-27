@@ -1,4 +1,4 @@
-# Pagomio SDK PHP Library
+# Pagomío SDK PHP Library
 
 ## Installation
 
@@ -96,4 +96,4 @@ var_dump($pagomio->getRequestPayment());
 ## License
 Licensed under the MIT license.
 
-Copyright (c) 2015 Pagomio.
+Copyright (r) 2015 Pagomío.
