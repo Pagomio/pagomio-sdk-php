@@ -46,7 +46,7 @@ $pagomio = new Pagomio\Pagomio('client_id','secret_id',true);
 ```
 
 ### Generate Token
-You must generate a token with payment information.
+You must generate a token with all your payment information.
 
 ```php
 //Customer information - Not required 
@@ -86,7 +86,7 @@ if($response->success) {
 ```
 
 ### Response 
-After payment `Pagomio.com` redirected to the page you reported in the previous step.
+After the payment `Pagomio.com` redirected to the page that you reported in the previous step.
 
 ```php
 $pagomio = new Pagomio\Pagomio('client_id','secret_id',true);
