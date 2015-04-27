@@ -66,7 +66,7 @@ $paymentData->taxAmount = '160';
 $paymentData->devolutionBaseAmount = '1000';
 $paymentData->description = 'Description of your product';
 
-// Url return to after payment
+// Url return to after payment - Is required
 $enterpriseData = new Pagomio\EnterpriseData();
 $enterpriseData->url_redirect = 'http://www.foo.com/response.php';
 
