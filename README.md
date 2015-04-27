@@ -27,7 +27,7 @@ To install the source code:
 
 ```bash
 $ git clone git@github.com:Pagomio/pagomio-sdk-php.git
-$ git clone git://github.com/rmccue/Requests.git
+$ git clone git@github.com:rmccue/Requests.git
 ```
 Include `pagomio-sdk-php` in your code and autoload `requests`:
 
