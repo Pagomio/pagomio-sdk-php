@@ -33,7 +33,7 @@ Include `pagomio-sdk-php` in your code and autoload `requests`:
 
 ```php
 require_once '/path/to/pagomio-sdk-php/pagomio.php';
-require_once '/path/to/rmccue/requests/Requests.php';
+require_once '/path/to/Requests/library/Requests.php';
 Requests::register_autoloader();
 ```
 
@@ -89,6 +89,7 @@ if($response->success) {
 After the payment `Pagomio.com` redirected to the page that you reported in the previous step.
 
 ```php
+// response.php
 $pagomio = new Pagomio\Pagomio('client_id','secret_id',true);
 var_dump($pagomio->getRequestPayment());
 ```
