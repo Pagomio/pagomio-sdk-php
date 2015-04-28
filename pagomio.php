@@ -10,6 +10,10 @@ class Pagomio extends Client{
     public $client_id;
     public $secret_id;
 
+    const TRANSACTION_PENDING = 1;
+    const TRANSACTION_SUCCESS = 2;
+    const TRANSACTION_ERROR = 3;
+
     /**
      * @param $client_id
      * @param $secret_id
