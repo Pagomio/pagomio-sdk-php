@@ -1,6 +1,13 @@
 <?php
 
+// With Composer
 require 'vendor/autoload.php';
+
+// From GitHub
+require_once '/path/to/pagomio-sdk-php/pagomio.php';
+require_once '/path/to/Requests/library/Requests.php';
+Requests::register_autoloader();
+
 
 $pagomio = new Pagomio\Pagomio('client_id','secret_id',true);
 
