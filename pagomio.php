@@ -43,9 +43,9 @@ class Pagomio extends Client{
     public function getToken(AuthorizePayment $authorizePayment){
         $authorizePayment->enterpriseData->client_id = $this->client_id;
         $authorizePayment->enterpriseData->secret_id = $this->secret_id;
-        $object = [
+        $object = array(
             'object' => base64_encode(serialize($authorizePayment))
-        ];
+        );
         return $this->request("POST", "/generates/tokens.json", $this->client_id, $this->secret_id,$object);
     }
 
@@ -59,9 +59,9 @@ class Pagomio extends Client{
             throw new \Exception(Error_Message::ERROR_NOT_REQUEST);
         }
         $reference = !is_null($reference) ? $reference : $_POST['reference'];
-        $object = [
+        $object = array(
             'reference' => $reference
-        ];
+        );
         return $this->request("GET", "/transaction/info.json", $this->client_id, $this->secret_id,$object);
     }
 }
