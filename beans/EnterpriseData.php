@@ -19,4 +19,9 @@ class EnterpriseData {
      */
     public $url_redirect;
 
+    /**
+     * @var string
+     */
+    public $url_notify;
+
 }
