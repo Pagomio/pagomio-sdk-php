@@ -55,10 +55,10 @@ class Pagomio extends Client{
      * @throws \Exception
      */
     public function getRequestPayment($reference=null){
-        if(is_null($reference) && !isset($_POST['reference'])){
+        if(is_null($reference) && !isset($_REQUEST['reference'])){
             throw new \Exception(Error_Message::ERROR_NOT_REQUEST);
         }
-        $reference = !is_null($reference) ? $reference : $_POST['reference'];
+        $reference = !is_null($reference) ? $reference : $_REQUEST['reference'];
         $object = array(
             'reference' => $reference
         );
