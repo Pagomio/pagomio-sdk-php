@@ -31,6 +31,7 @@ $paymentData->description = 'Description of your product';
 // Url return to after payment
 $enterpriseData = new Pagomio\EnterpriseData();
 $enterpriseData->url_redirect = 'http://www.foo.com/response.php';
+$enterpriseData->url_notify = 'http://www.foo.com/notify.php';
 
 // Create the object
 $aut = new Pagomio\AuthorizePayment();
