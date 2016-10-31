@@ -92,19 +92,18 @@ After the payment `Pagomio.com` redirected to the page that you reported in the 
 ```php
 // response.php
 $pagomio = new Pagomio\Pagomio('client_id','secret_id',true);
-var_dump($pagomio->getRequestPayment());
 $request = $pagomio->getRequestPayment();
 switch ($request->status) {
-		case  Pagomio\Pagomio::TRANSACTION_SUCCESS:
-			// ... 
-			break;
-		case  Pagomio\Pagomio::TRANSACTION_ERROR:
-			// ... 
-			break;
-		case Pagomio\Pagomio::TRANSACTION_PENDING:
-			// ... 
-			break;
-	}
+	case  Pagomio\Pagomio::TRANSACTION_SUCCESS:
+		// ... 
+		break;
+	case  Pagomio\Pagomio::TRANSACTION_ERROR:
+		// ... 
+		break;
+	case Pagomio\Pagomio::TRANSACTION_PENDING:
+		// ... 
+		break;
+}
 ```
 
 ## License
