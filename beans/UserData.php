@@ -29,5 +29,10 @@ class UserData {
      * @var email
      */
     public $email;
+    
+    /**
+     * @var string
+     */
+    public $phone;
 
 }
