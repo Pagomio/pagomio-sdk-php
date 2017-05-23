@@ -56,6 +56,7 @@ $userData->lastNames = 'Last name User';
 $userData->identificationType = 'CC'; # Allow: CC, TI, PT, NIT 
 $userData->identification = '123456789';
 $userData->email = 'email@domain.com';
+$userData->phone = '1234567';
 
 // Payment information - Is required
 $paymentData = new Pagomio\PaymentData();
